@@ -29,6 +29,7 @@ class Snake:
 
     def extend(self):
         self.add_tail(self.segment[-1].position())
+
     def up(self):
         if self.segment[0].heading() != DOWN:
             self.segment[0].setheading(UP)
