@@ -1,9 +1,11 @@
 import time
+import os
 from turtle import Screen
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
 
+token = os.environ.get("AZURE_SECRET_TOKEN")
 screen = Screen()
 screen.setup(720, 720)
 screen.bgcolor("black")
@@ -41,6 +43,3 @@ while game_is_on:
         scoreboard.game_over()
 
 screen.exitonclick()
-
-if __name__ == '__main__':
-    main()
