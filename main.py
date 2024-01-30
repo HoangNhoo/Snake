@@ -41,3 +41,6 @@ while game_is_on:
         scoreboard.game_over()
 
 screen.exitonclick()
+
+if __name__ == '__main__':
+    main()
